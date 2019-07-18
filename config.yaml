@@ -24,7 +24,7 @@ role: python-bot-role
 
 # Experimental Environment variables
 environment_variables:
-    BOT_TOKEN:
+    BOT_TOKEN: AQICAHhAHn+NvzUeWK9HEnLbPWR6Zw0L8wVNzJgOh5lgS9XeKQFDWpJ9xobEVaaP57fy3TwhAAAAmDCBlQYJKoZIhvcNAQcGoIGHMIGEAgEAMH8GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM0yPn+eBJiXdZ9kjgAgEQgFKHlbCNLGbViN/6FiIztXDX6A4BNTjc6LPESmUvulyCWUEAH8b7+A8D3lyUQB+gZjmqIGXJ2PzBVY5JCGhSvMnCLvHkpK4pAU1lrBZRrX0QW6Zx
 
 # If `tags` is uncommented then tags will be set at creation or update
 # time.  During an update all other tags will be removed except the tags

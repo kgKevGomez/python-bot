@@ -1,10 +1,14 @@
 import logging
 import os
-
+import boto3
 import slack
+from base64 import b64decode
 
 # Grab the Bot OAuth token from the environment.
-BOT_TOKEN = os.environ["BOT_TOKEN"]
+BOT_TOKEN_ENCRYPTED = os.environ["BOT_TOKEN"]
+# Decrypt code should run once and variables stored outside of the function
+# handler so that these are decrypted once per container
+BOT_TOKEN = boto3.client('kms').decrypt(CiphertextBlob=b64decode(BOT_TOKEN_ENCRYPTED))["Plaintext"].decode()
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
